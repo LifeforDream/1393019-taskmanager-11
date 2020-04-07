@@ -3,8 +3,8 @@
 const TASK_COUNT = 3;
 
 const createSiteMenuTemplate = () => {
-  return (
-    `<section class="control__btn-wrap">
+    return (
+        `<section class="control__btn-wrap">
       <input
         type="radio"
         name="control"
@@ -32,7 +32,7 @@ const createSiteMenuTemplate = () => {
         >STATISTICS</label
       >
     </section>`
-  );
+    );
 };
 
 const createFilterTemplate = () => {
@@ -158,7 +158,7 @@ const createTaskTemplate = () => {
 
 const createTaskEditTemplate = () => {
     return (
-      `<article class="card card--edit card--yellow card--repeat">
+        `<article class="card card--edit card--yellow card--repeat">
         <form class="card__form" method="get">
           <div class="card__inner">
             <div class="card__color-bar">
@@ -377,4 +377,3 @@ for (let i = 0; i < TASK_COUNT; i++) {
 }
 
 render(boardElement, createLoadMoreButtonTemplate(), `beforeend`);
-console.log(`Hello world!`)
